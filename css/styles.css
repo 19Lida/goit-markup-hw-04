@@ -366,8 +366,29 @@ img {
   border-right: 1px solid #afb1b8;
   border-bottom: 1px solid #afb1b8;
   border-left: 1px solid #afb1b8;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  background-color: transparent;
 }
+.clients-group-1,
+.clients-group-2,
+.clients-group-3,
+.clients-group-4,
+.clients-group-5,
+.clients-group-6 {
+  fill: #afb1b8;
+}
+.clients-group-1,
+.clients-group-2,
+.clients-group-3,
+.clients-group-4,
+.clients-group-5,
+.clients-group-6:hover {
+  fill: var(--accent-color);
+}
+
 /* Портфоліо */
 /* Фільтр */
 .filter {
