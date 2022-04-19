@@ -77,6 +77,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 .item {
   margin-right: 50px;
@@ -348,6 +349,10 @@ img {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
+.workers-soc-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
 /* Клієнти */
 .clients-list {
   list-style: none;
@@ -365,30 +370,20 @@ img {
 .clients-link {
   width: 170px;
   height: 92px;
-  border-top: 1px solid #afb1b8;
-  border-right: 1px solid #afb1b8;
-  border-bottom: 1px solid #afb1b8;
-  border-left: 1px solid #afb1b8;
+  border: 1px solid #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
   background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-.clients-group-1,
-.clients-group-2,
-.clients-group-3,
-.clients-group-4,
-.clients-group-5,
-.clients-group-6 {
-  fill: #afb1b8;
+
+.clients-link:hover {
+  fill: var(--accent-color);
 }
-.clients-group-1,
-.clients-group-2,
-.clients-group-3,
-.clients-group-4,
-.clients-group-5,
-.clients-group-6:hover {
+.clients-link:focus {
   fill: var(--accent-color);
 }
 
@@ -424,7 +419,7 @@ img {
   color: var(--primery-text-color);
   background: var(--secondary-background-color);
   cursor: pointer;
-  border-radius: 3px;
+  background-color: transparent;
 }
 .filter-buttom:hover,
 .filter-buttom:focus {
@@ -449,16 +444,14 @@ h2 {
   margin-left: -30px;
 }
 .pictures .pictures-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 .pictures-item {
   background: var(--primery-background-color);
 }
-.pictures-item:hover {
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-}
+
 .heading {
   padding-left: 24px;
   padding-right: 24px;
@@ -482,6 +475,11 @@ h2 {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.cards-link:hover,
+.cards-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* Футер */
 .footer {
   background: var(--footer-color);
@@ -490,6 +488,7 @@ h2 {
 }
 .address-main {
   display: flex;
+  align-items: baseline;
 }
 .footer-address {
   margin-right: 70px;
@@ -525,7 +524,7 @@ h2 {
 .footer-item {
   margin-bottom: 9px;
 }
-.footer-address {
+.footer-address_li {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
@@ -578,8 +577,13 @@ h2 {
   justify-content: center;
   align-items: center;
   fill: #ffffff;
+  background-color: #757575;
 }
 .join-link:hover {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
+.join-link:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
