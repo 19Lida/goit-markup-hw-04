@@ -47,6 +47,7 @@ body {
 .header-logo {
   text-decoration: none;
   margin-right: 93px;
+  display: flex;
 }
 .logo-blue {
   font-family: 'Raleway';
@@ -98,13 +99,14 @@ body {
 .site-nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .site-nav-link:hover,
 .site-nav-link:focus {
@@ -136,6 +138,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .nav-link-list:hover,
 .nav-link-list:focus {
@@ -474,6 +478,9 @@ h2 {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.cards-link {
+  display: block;
 }
 .cards-link:hover,
 .cards-link:focus {
